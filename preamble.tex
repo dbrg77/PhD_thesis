@@ -1,0 +1,188 @@
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec}            % set font
+\usepackage{graphicx}            % adding pictures
+\usepackage[export]{adjustbox}   % allow more position control of graphicx
+\usepackage{geometry}            % adjusting page margins
+\usepackage{tocloft}             % more control for toc
+\usepackage{hyperref}            % create internal hyperlinks, must be specified before cite package to work
+\usepackage{ifthen}              % allow if then else statements
+\usepackage{setspace}            % set line spacing
+\usepackage{enumitem}            % allow change of numbering style in enumeration
+\usepackage{bookmark}            % for custom bookmark
+\usepackage{caption}             % customise figure labels
+\usepackage{fancyhdr}            % modify header
+\usepackage{longtable}           % create tables that span multiple pages
+\usepackage{array}               % allow m, p, b alignment in tables
+\usepackage{multirow}            % multirow
+\usepackage{csquotes}            % `` and '' do not always work in some settings
+\usepackage{seqsplit}            % use the \seqsplit to wrap DNA sequence
+\usepackage{tikz}                % digram drawing
+\usetikzlibrary{positioning, arrows.meta}
+\usepackage[backend=bibtex, style=authoryear, bibencoding=utf8, hyperref=auto,
+            giveninits=true,     % after v3.3, initials are used for first names
+            isbn=false,          % suppress isbn
+            dashed=false]{biblatex}
+
+\linespread{1.5}
+
+%% change bibliography style -----------------------------------------------------------%
+% Some general changes                                                                  %
+\DeclareNameAlias{sortname}{last-first}                                                 %
+\renewcommand*{\bibinitdelim}{}                                                         %
+\renewbibmacro*{in:}{%                                                                  %
+    \iffieldequalstr{entrytype}{inproceedings}{%                                        %
+        \printtext{\bibstring{in}\addspace}%                                            %
+    }{}%                                                                                %
+}                                                                                       %
+\AtEveryBibitem{\clearfield{number}}                                                    %
+                                                                                        %
+% Changes for Book                                                                      %
+\csletcs{abx@macro@publisher+location+date@orig}{abx@macro@publisher+location+date}     %
+\renewbibmacro*{publisher+location+date}{%                                              %
+    \printtext[parens]{\usebibmacro{publisher+location+date@orig}}                      %
+}                                                                                       %
+\DeclareFieldFormat[book]{title}{#1\printunit{\addspace}}                               %
+                                                                                        %
+% Changes in Article                                                                    %
+\DeclareFieldFormat[article]{title}{#1}                                                 %
+\DeclareFieldFormat[article]{journaltitle}{\textit{#1\isdot}}                           %
+\DeclareFieldFormat[article]{volume}{#1}                                                %
+\DeclareFieldFormat[article]{pages}{#1}                                                 %
+                                                                                        %
+% load reference                                                                        %
+\bibliography{PhD_thesis}                                                               %
+%% -------------------------------------------------------------------------------------%
+
+
+%% custom commands for easy formatting -------------------------------------------------%
+\newcommand{\sus}[1]{$^{\mbox{\scriptsize #1}}$} % superscript in text (e.g. 1st)       %
+\newcommand{\sub}[1]{$_{\mbox{\scriptsize #1}}$} % subscript in text                    %
+%% -------------------------------------------------------------------------------------%
+
+
+%% define header in the abstract page --------------------------------------------------%
+\fancypagestyle{abstracthead}{                                                          %
+    \lhead{\textbf{The University of Manchester\\                                       %
+                   Xi Chen\\                                                            %
+                   PhD\\                                                                %
+                   The DNA-binding specificity of Forkhead transcription factors\\      %
+                   28/09/2012}}                                                         %
+}                                                                                       %
+%% -------------------------------------------------------------------------------------%
+
+%% modify formats of lists of figures/tables -------------------------------------------%
+\renewcommand{\listfigurename}{List of figures}                                         %
+\renewcommand{\listtablename}{List of tables}                                           %
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % add dots                        %
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}                                %
+\setlength{\cftfignumwidth}{3em}  % Modify number width in LoF                          %
+\setlength{\cfttabnumwidth}{3em}  % Modify number width in LoT                          %
+%% -------------------------------------------------------------------------------------%
+
+
+% modify figure and table captions -----------------------------------------------------%
+\captionsetup{labelfont=bf,                                                             %
+              format=hang,                                                              %
+              indention=-1cm,                                                           %
+              font={footnotesize,sf,stretch=0.5}}                                       %
+                                                                                        %
+\captionsetup[longtable]{labelfont={bf,it},                                             %
+              format=hang,                                                              %
+              indention=-1cm,                                                           %
+              font=normalfont}                                                          %
+%% -------------------------------------------------------------------------------------%
+
+
+%% have no highlighting on links and break lines in the LOF and LOT --------------------%
+\hypersetup{pdftitle={University of Manchester thesis}, pdflang={en-GB},                %
+            hidelinks, colorlinks=false, breaklinks=true, bookmarksdepth=2}             %
+%% -------------------------------------------------------------------------------------%
+
+
+%% Define Abstract ---------------------------------------------------------------------%
+\renewenvironment{abstract}{%                                                           %
+  \clearpage\phantomsection\chapter*{Abstract}                                          %
+}                                                                                       %
+{\addcontentsline{toc}{chapter}{\abstractname}\endquotation\vfil\null\clearpage}        %
+%% -------------------------------------------------------------------------------------%
+
+
+%% Lists and tables of contents --------------------------------------------------------%
+\newcommand{\uomtoc}{                                                                   %
+  \phantomsection\addcontentsline{toc}{chapter}{Contents}                               %
+  \tableofcontents                                                                      %
+  \ifthenelse{\equal{\reportyear}{thesis}}{                                             %
+    \vspace*{\fill}                                                                     %
+    \begin{flushright}                                                                  %
+      \textbf{Word Count}: \wordcount                                                   %
+    \end{flushright}                                                                    %
+  }{}                                                                                   %
+  \clearpage                                                                            %
+}                                                                                       %
+                                                                                        %
+\newcommand{\uomlof}{% list of figures                                                  %
+  \phantomsection\addcontentsline{toc}{chapter}{List of figures}                        %
+  \listoffigures                                                                        %
+  \clearpage                                                                            %
+  }                                                                                     %
+\newcommand{\uomlot}{% list of tables                                                   %
+  \phantomsection\addcontentsline{toc}{chapter}{List of tables}                         %
+  \listoftables                                                                         %
+  \clearpage                                                                            %
+  }                                                                                     %
+%% -------------------------------------------------------------------------------------%
+
+
+%% Declarations -----------------------------------------------------------------------
+\newcommand{\uomdeclarations}{
+  \phantomsection\addcontentsline{toc}{chapter}{Declaration}
+  \chapter*{Declaration}
+  No portion of the work referred to in the thesis has been submitted in support of an application for another degree or qualification of this or any other university or other institute of learning.
+  \clearpage
+  
+  \phantomsection\addcontentsline{toc}{chapter}{Copyright statement}
+  \chapter*{Copyright statement} 
+  \begin{enumerate}[label=\roman*]
+    \item The author of this thesis (including any appendices and/or schedules to this thesis) owns certain copyright or related rights in it (the ``Copyright'') and s/he has given The University of Manchester certain rights to use such Copyright, including for administrative purposes.
+    \item Copies of this thesis, either in full or in extracts and whether in hard or electronic copy, may be made \emph{only} in accordance with the Copyright, Designs and Patents Act 1988 (as amended) and regulations issued under it or, where appropriate, in accordance with licensing agreements which the University has from time to time. This page must form part of any such copies made.
+    \item The ownership of certain Copyright, patents, designs, trademarks and other intellectual property (the ``Intellectual Property'') and any reproductions of copyright works in the thesis, for example graphs and tables (``Reproductions''), which may be described in this thesis, may not be owned by the author and may be owned by third parties. Such Intellectual Property and Reproductions cannot and must not be made available for use without the prior written permission of the owner(s) of the relevant Intellectual Property and/or Reproductions.
+	\item Further information on the conditions under which disclosure, publication and commercialisation of this thesis, the Copyright and any Intellectual Property and/or Reproductions described in it may take place is available in the University IP Policy (see \url{http://documents.manchester.ac.uk/DocuInfo.aspx?DocID=24420}), in any relevant Thesis restriction declarations deposited in the University Library, The University Library’s regulations (see \url{http://www.library.manchester.ac.uk/about/regulations/}) and in The University’s policy on Presentation of Theses.
+  \end{enumerate}
+  \clearpage
+}
+%% ------------------------------------------------------------------------------------
+
+
+%% Contribution from others ------------------------------------------------------------%
+\newenvironment{uomothercontributions}{                                                 %
+  \phantomsection\addcontentsline{toc}{chapter}{Contributions from other co-workers}    %
+  \chapter*{Contributions from other co-workers}                                        %
+  \bookmarksetup{startatroot}                                                           %
+}                                                                                       %
+{\clearpage}                                                                            %
+%% -------------------------------------------------------------------------------------%
+
+
+%% Acknowledgements --------------------------------------------------------------------%
+\newenvironment{uomacknowledgements}{                                                   %
+  \phantomsection\addcontentsline{toc}{chapter}{Acknowledgements}                       %
+  \chapter*{Acknowledgements}                                                           %
+  \bookmarksetup{startatroot}                                                           %
+}                                                                                       %
+{\clearpage}                                                                            %
+%% -------------------------------------------------------------------------------------%
+
+
+%% Appendix ----------------------------------------------------------------------------%
+\newenvironment{uomappendix}{                                                           %
+  \clearpage                                                                            %
+  \bookmarksetupnext{level=part}                                                        %
+  \phantomsection\addcontentsline{toc}{chapter}{Appendices}                             %
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}                                 %
+  \chapter*{Appendices}                                                                 %
+  \clearpage                                                                            %
+  \renewcommand\chaptername{Appendix}                                                   %
+  \begin{appendices}                                                                    %
+}                                                                                       %
+{\end{appendices}}                                                                      %
+%% -------------------------------------------------------------------------------------%

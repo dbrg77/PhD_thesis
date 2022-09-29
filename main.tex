@@ -1,0 +1,110 @@
+\documentclass[12pt,a4paper]{report}
+
+\input{preamble}
+
+%%% ------------------------------------------------------------------------------------ %%%
+%                                                                                          %
+%                                     document starts here                                 %
+%                                                                                          %
+%%% ------------------------------------------------------------------------------------ %%%
+
+\begin{document}
+
+\begin{titlepage}
+\includegraphics{uom_logo.pdf}
+
+\vspace{100pt}
+\begin{center}
+    \Large \textbf{THE DNA-BINDING SPECIFICITY OF FORKHEAD TRANSCRIPTION FACTORS}\par
+    
+    \normalsize
+    \vspace{50pt}
+    A thesis submitted to The University of Manchester\\[7.5pt]
+    for the degree of\\[7.5pt]
+    PhD\\[7.5pt]
+    in the Faculty of Life Sciences
+    
+    \vspace{50pt}
+    \bf 2012
+    
+    \vspace{50pt}
+    Xi Chen
+\end{center}
+\end{titlepage}
+\setcounter{page}{2}
+
+\newgeometry{a4paper, top=1.5cm, bottom=1.5cm, right=1.5cm, left=4cm, includefoot, includehead}
+\setlength{\parskip}{12pt}
+
+\tableofcontents
+\clearpage
+
+\uomlot
+
+\uomlof
+
+%% Abstract
+\begin{abstract} % put abstract here. Limit is 1 page.
+\thispagestyle{abstracthead}
+\setstretch{1.15}
+  The healthy development of a living cell requires precise spatial-temporal gene expression. The code that dictates when and where genes are expressed is stored in a pattern of specific sequence motifs, which can be recognised by transcription factors. Understanding the interaction between these DNA sequence motifs and transcription factors will help to elucidate how genomic sequences build transcriptional control networks. However, the DNA-binding specificities of \textasciitilde 1400 human transcription factors are largely unknown. The in vivo DNA-binding events of transcription factors involve great subtlety, because most transcription factors recognise degenerate sequence motifs and related transcription factors often prefer similar or even identical sequences. Forkhead transcription factors exemplify these challenges. To understand how members within the Forkhead transcription factor family gain their binding and functional specificities, we used chromatin immunoprecipitation coupled with high-throughput sequencing (ChIP-seq) to interrogate the genome-wide chromatin binding events of three Forkhead transcription factors: FOXM1, FOXO3 and FOXK2. We find that FOXM1 specifically binds to the promoters of a large array of genes whose activities peak at the G2 and M phases of the cell cycle. The canonical Forkhead consensus GTAAACA is not enriched within the FOXM1 cistrome. It gains its own specific binding events and biological functions by interacting and cooperating with the MMB complex. FOXO3 and FOXK2 are recruited to chromatin by the canonical Forkhead consensus GTAAACA, and they bind both shared and specific regions in the genome. FOXO3 mostly binds to the regions which are also bound by FOXK2, but no competitive or assisted binding between FOXO3 and FOXK2 is detected within those regions. Overall, these results help explain how individual members of the Forkhead transcription factor family gain binding specificity within the genome yet raises new questions of how functional specificity is achieved by other family members.
+\end{abstract}
+\clearpage
+
+\newgeometry{a4paper, top=1.5cm, bottom=1.5cm, right=1.5cm, left=4cm, includefoot, footskip=15pt}
+
+\uomdeclarations
+
+\begin{uomothercontributions}
+For the FOXM1 ChIP-seq data analyses, read mapping was done by Dr. Gordon Brown from the Carroll lab (The University of Cambridge). MACS peak calling was done by Dr. Namshik Han from the Sharrocks lab (The University of Manchester).
+
+For the FOXO3 ChIP-seq data analyses, read mapping and MACS peak calling were done by Dr. Ian Donaldson from the Bioinformatics Core Facility (The University of Manchester).
+
+The FOXK2 ChIP-seq experiments were done by Dr. Zonling Ji from the Sharrocks lab, and the data have already been published (\cite{ji2012the}).
+
+The gene expression array analyses in \textbf{Figure \ref{fig:fig20}A} were done by Dr. Namshik Han from the Sharrocks lab.
+
+The Co-IP experiments in \textbf{Figure \ref{fig:fig26}A} and \textbf{Figure \ref{fig:fig36}C} were done by Dr. Gerd Muller from the Engeland lab (The University of Leipzig).
+
+The ChIP experiments in \textbf{Figure \ref{fig:fig27}B} were done by Ms. Marianne Quaas from the Engeland lab (The University of Leipzig).
+
+The rest of work in this thesis, including both wet lab experiments and bioinformatics analyses, was done by me, Xi Chen.   
+\end{uomothercontributions}
+
+
+\begin{uomacknowledgements}
+First and foremost, I would like to thank my supervisor Prof. Andy Sharrocks for his continuous support and for sharing his knowledge and ideas on transcription during the entire project. I am deeply grateful for his patience at the beginning of my PhD when nothing seemed to work for no apparent reasons. I also want to thank him for being my guarantor when I rent my flat, and for giving me several \textit{Nature Methods} magazines which are much more comfortable to read than printed papers. In addition, I hope Leeds United will come back to the Premier League soon.
+
+Many thanks go to my advisor Dr. Alan Whitmarsh and all the people in the Sharrocks lab for their help and advice. In particular, I would like to thank Dr. Shen-Hsi Yang for being a great discussion partner, for sharing his unique philosophy to me, for being a good friend and for helping me move. Special thanks go to Dr. Zongling Ji, Dr. Elisa Martinez and Dr. Zaneta Odrowaz for the tasty food and for bringing me out of the lab to have a social life. I also thank Dr. Namshik Han and Dr. Ian Donaldson for sharing the tricks of using Linux. My thanks also go to all members within the faculty who helped me complete my project, including Dr. Daniel Wratting from the Millar lab and Dr. Daniel Yazmany from the Shore lab for sharing the reagents, the staff of the Genomic Technologies, Bioinformatics and Bioimaging Core Facilities for helping me with the experiments.
+
+I would also like to thank Prof. Kurt Engeland, Dr. Gerd Muller, Ms. Marianne Quaas and Mr. Martin Fischer from the Engeland lab for the help and the advice about the experiments. It has been a pleasure to collaborate with all of you.
+
+A special thank goes to Dr. Jason Carroll for providing us the opportunity to try our FOXM1 ChIP-seq experiments using the Illumina sequencing platform which is really helpful. I also thank Dr. Gordon Brown from the Carroll lab for the help of the initial mapping of the Illumina data.
+
+Finally, I would like to thank my parents for their constant support all along my PhD project.
+\end{uomacknowledgements}
+
+\include{chapter1/introduction}
+
+\include{chapter2/material}
+\include{chapter2/methods}
+
+\include{chapter3/res-overview}
+\include{chapter3/res-foxm1}
+\include{chapter3/res-foxo3}
+
+\include{chapter4/general_discussion}
+
+\include{chapter5/conclusions}
+
+\appendix
+\include{appendix/appendix}
+
+%\bibliographystyle{plain}
+%\bibliography{PhD_thesis}
+
+\setstretch{1}
+\setlength\bibitemsep{4pt}
+\printbibliography[title={Reference},heading=bibintoc]
+
+\end{document}

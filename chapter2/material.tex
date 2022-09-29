@@ -1,0 +1,1105 @@
+\chapter{Material and Methods} \label{ch:mm}
+
+\section{Material}
+
+General laboratory reagents and chemicals are purchased from Sigma-Aldrich, Invitrogen, Roche-Applied-Science, Promega and Serva.
+
+\subsection{Buffers and solutions}
+
+Highly purified water (Milli-Q biocel-dispenser) is used for all reactions described and for preparation of buffers and solutions. Buffers and solutions not listed are described in the appropriate methods section.
+
+{\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.25cm}|>{\raggedright\arraybackslash}m{5.5cm}|>{\centering\arraybackslash}b{3.5cm}|}
+    %% table setup %%
+    \caption{Buffers and solutions for cell lysis, gel electrophoresis, and western blot\label{table:wb}}\\
+    \hline
+    \textbf{Name} & \textbf{Ingredients} & \textbf{Final concentration}\\
+    \hline
+    \endfirsthead
+    \multicolumn{3}{l}{\textbf{\textit{Table \ref{table:wb}}} continued}\\
+    \hline
+    \textbf{Name} & \textbf{Ingredients} & \textbf{Final concentration}\\
+    \hline
+    \endhead
+    \hline
+    \multicolumn{3}{l}{\textit{continued on the next page}}\\
+    \endfoot
+    \hline \hline
+    \endlastfoot
+    
+    %% actual content %%
+    \multirow{7}{4.25cm}{\centering \textbf{Triton Lysis Buffer}} & Tris-HCl, pH 7.4 & 20 mM\\
+        & NaCl & 137 mM\\
+        & EDTA & 2 mM\\
+        & Dithiothreitol (DTT) & 0.5 mM\\
+        & Glycerol & 10\% (w/v)\\
+        & Triton X-100 & 1\% (v/v)\\
+        & Protease Inhibitor Cocktail & 1x\\
+    \hline
+    \multirow{5}{4.25cm}{\centering \textbf{Triton Lysis Buffer} (with phosphatase inhibitors)} 
+        & \textbf{Triton Lysis Buffer} supplied with the following: & $\ $\\
+        & Sodium $\beta$-glycerophosphate                           & 0.5 M\\
+        & Sodium pyrophosphate                                      & 2 mM\\
+        & NaF                                                       & 50 mM\\
+        & Na\sub{3}VO\sub{4}                                        & 1 mM\\
+        \hline
+    \multirow{6}{4.25cm}{\centering \textbf{SDS PAGE Loading Buffer} (5$\times$)}
+        & Tris-HCl, pH 6.8              & 210 mM\\
+        & Sodium dodecyl sulphate (SDS) & 10\% (w/v)\\
+        & Glycerol                      & 21.6\% (w/v)\\
+        & Dithiothreitol (DTT)          & 5.6\% (w/v)\\
+        & Bromophenol blue              & 0.002\% (w/v)\\
+        & $\beta$-Mercaptoethanol       & 10\% (v/v)\\
+    \hline
+    \multirow{2}{4.25cm}{\centering \textbf{Polyacrylamide Gel Lower Buffer} (4$\times$)}
+        & Tris-HCl, pH 8.8 & 1.5 M\\
+        & SDS              & 0.4\% (w/v)\\
+    \hline
+    \multirow{2}{4.25cm}{\centering \textbf{Polyacrylamide Gel Upper Buffer} (4$\times$)}
+        & Tris-HCl, pH 6.8 & 0.5 M\\
+        & SDS              & 0.4\% (w/v)\\
+    \hline
+    \multirow{3}{4.25cm}{\centering \textbf{SDS Running Buffer} (10$\times$)}
+        & Tris-base & 250 mM\\
+        & Glycine   & 1.9 M\\
+        & SDS       & 0.1\% (w/v)\\
+    \hline
+    \multirow{3}{4.25cm}{\centering \textbf{Wet Transfer Buffer} (1$\times$)}
+        & Tris-base & 25 mM\\
+        & Glycine   & 190 mM\\
+        & Methanol  & 20\% (v/v)\\ 
+    \hline
+    \textbf{Odyssey Blocking Buffer} & N.A. & N.A.\\
+    \hline
+    \multirow{3}{4.25cm}{\centering \textbf{Phosphate-Buffered Saline} (PBS) (1$\times$), pH 7.4}
+        & NaCl      & 137 mM\\
+        & Phosphate & 10 mM\\
+        & KCl       & 2.7 mM\\
+    \hline
+    \multirow{2}{4.25cm}{\centering \textbf{Tris-Buffered Saline} (TBS) (1$\times$), pH 8.0}
+        & Tris-base & 50 mM\\
+        & NaCl      & 150 mM\\
+    \hline
+    \pagebreak
+    \multirow{3}{4.25cm}{\centering \textbf{TBS-Tween} (1$\times$), pH 8.0}
+        & Tris-base & 50 mM\\
+        & NaCl      & 150 mM\\
+        & Tween-20  & 0.05\% (v/v)\\
+    \hline
+    \multirow{3}{4.25cm}{\centering \textbf{Coomassie blue stain}}
+        & Coomassie brilliant blue R250 & 0.25\% (w/v)\\
+        & Acetic acid                   & 10\% (v/v)\\
+        & Methanol                      & 45\% (v/v)\\
+    \hline
+    \multirow{2}{4.25cm}{\centering \textbf{Destain solution}}
+        & Acetic acid & 10\% (v/v)\\
+        & Methanol    & 45\% (v/v)\\
+    \hline
+\end{longtable}
+
+\begin{longtable}{|>{\centering\arraybackslash}m{5.25cm}|>{\raggedright\arraybackslash}m{5.5cm}|>{\centering\arraybackslash}b{3.5cm}|}
+    %% table setup %%
+    \caption{Buffers and solutions for Chromatin Immunoprecipitation\label{table:chip}}\\
+    \hline
+    \textbf{Name} & \textbf{Ingredients} & \textbf{Final concentration}\\
+    \hline
+    \endfirsthead
+    \multicolumn{3}{l}{\textbf{\textit{Table \ref{table:chip}}} continued}\\
+    \hline
+    \textbf{Name} & \textbf{Ingredients} & \textbf{Final concentration}\\
+    \hline
+    \endhead
+    \hline
+    \multicolumn{3}{l}{\textit{continued on the next page}}\\
+    \endfoot
+    \hline \hline
+    \endlastfoot
+    
+    %% actual content %%
+    \multirow{2}{4.25cm}{\centering \textbf{Crosslinking Solution}}
+        & PBS, pH 7.4  & 1$\times$\\
+        & Formaldehyde & 1\% (v/v)\\
+    \hline
+    \multirow{2}{4.25cm}{\centering \textbf{Quenching Solution}}
+        & PBS, pH 7.4 & 1$\times$\\
+        & Glycine.    & 125 mM\\
+    \hline
+    \multirow{2}{4.25cm}{\centering \textbf{ChIP Blocking Buffer}}
+        & PBS, pH 7.4                & 1$\times$\\
+        & Bovine Serum Albumin (BSA) & 0.5\% (w/v)\\
+    \hline
+    \multirow{6}{4.25cm}{\centering \textbf{ChIP Lysis Buffer I}}
+        & HEPES, pH 7.5 & 50 mM\\
+        & NaCl          & 140 mM\\
+        & EDTA, pH 8.0  & 1 mM\\
+        & Glycerol      & 10\% (v/v)\\
+        & IGEPAL CA-630 & 0.5\% (v/v)\\
+        & Triton X-100  & 0.25\% (v/v)\\
+        \hline
+    \multirow{4}{4.25cm}{\centering \textbf{ChIP Lysis Buffer II}}
+        & Tris-HCl, pH 8.0 & 10 mM\\
+        & NaCl             & 200 mM\\
+        & EDTA, pH 8.0     & 1 mM\\
+        & EGTA, pH 8.0     & 0.5 mM\\
+    \hline
+    \pagebreak
+    \multirow{6}{4.25cm}{\centering \textbf{ChIP Lysis Buffer III}}
+        & Tris-HCl, pH 8.0      & 10 mM\\
+        & NaCl                  & 100 mM\\
+        & EDTA, pH 8.0          & 1 mM\\
+        & EGTA, pH 8.0          & 0.5 mM\\
+        & Na Deoxycholate (DOC) & 0.1\% (w/v)\\
+        & N-lauroyl sarcosine   & 0.5\% (w/v)\\
+    \hline
+    \multirow{5}{4.25cm}{\centering \textbf{ChIP RIPA Wash Buffer}}
+        & HEPES, pH 7.5         & 50 mM\\
+        & LiCl                  & 500 mM\\
+        & EDTA, pH 8.0          & 1 mM\\
+        & IGEPAL CA-630         & 1\% (v/v)\\
+        & Na Deoxycholate (DOC) & 0.7\% (w/v)\\
+    \hline
+    \multirow{3}{4.25cm}{\centering \textbf{ChIP Elution Buffer}}
+        & Tris-HCl, pH 8.0 & 50 mM\\
+        & EDTA, pH 8.0     & 10 mM\\
+        & SDS              & 1\% (w/v)\\
+    \hline
+    \multirow{3}{4.25cm}{\centering \textbf{1$\times$ TE + 50 mM NaCl}}
+        & Tris-HCl, pH 8.0 & 10 mM\\
+        & EDTA, pH 8.0     & 1 mM\\
+        & NaCl             & 50 mM\\
+    \hline
+    \multirow{2}{4.25cm}{\centering \textbf{TE} (1$\times$)}
+        & Tris-HCl, pH 8.0 & 10 mM\\
+        & EDTA, pH 8.0     & 1 mM\\
+    \hline
+\end{longtable}
+
+\begin{longtable}{|>{\centering\arraybackslash}m{4.25cm}|>{\raggedright\arraybackslash}m{6.5cm}|>{\centering\arraybackslash}b{3.5cm}|}
+    %% table setup %%
+    \caption{Buffers and solutions for Band shift\label{table:bandshift}}\\
+    \hline
+    \textbf{Name} & \textbf{Ingredients} & \textbf{Final concentration}\\
+    \hline
+    \endfirsthead
+    \multicolumn{3}{l}{\textbf{\textit{Table \ref{table:bandshift}}} continued}\\
+    \hline
+    \textbf{Name} & \textbf{Ingredients} & \textbf{Final concentration}\\
+    \hline
+    \endhead
+    \hline
+    \multicolumn{3}{l}{\textit{continued on the next page}}\\
+    \endfoot
+    \hline \hline
+    \endlastfoot
+    
+    %% actual content %%
+    \multirow{6}{4.25cm}{\centering \textbf{Dz Buffer} (1$\times$)}
+        & HEPES-KOH, pH 7.9  & 25 mM\\
+        & Glycerol           & 20\% (v/v)\\
+        & MgCl\sub{2}        & 2 mM\\
+        & DTT                & 1 mM\\
+        & ZnCl\sub{2}        & 0.1 $\mu$M\\
+        & EDTA, pH 8.0       & 0.2 mM\\
+    \hline
+    \pagebreak
+    \multirow{2}{4.25cm}{\centering \textbf{FpF Buffer} (4$\times$)}
+        & Spermidine   & 8 mM\\
+        & EDTA, pH 8.0 & 9.4 mM\\
+    \hline
+    \multirow{3}{4.25cm}{\centering \textbf{Sample Dilution Buffer}}
+        & PBS, pH 7.4 & 1$\times$\\
+        & Glycerol    & 10\% (v/v)\\
+        & BSA         & 1 mg/mL (w/v)\\
+    \hline
+    \multirow{4}{4.25cm}{\textbf{\centering Band shift Loading Buffer}}
+        & Ficoll 400                         & 8\% (w/v)\\
+        & TE                                 & 0.5$\times$\\
+        & EDTA, pH 8.0                       & 70 mM\\
+        & Xylene cyanol and Bromophenol blue & 0.1\% (v/v)\\
+    \hline
+\end{longtable}
+
+\begin{longtable}{|>{\centering\arraybackslash}m{4.25cm}|>{\raggedright\arraybackslash}m{6.5cm}|>{\centering\arraybackslash}b{3.5cm}|}
+    %% table setup %%
+    \caption{Buffers and solutions for other uses\label{table:others}}\\
+    \hline
+    \textbf{Name} & \textbf{Ingredients} & \textbf{Final concentration}\\
+    \hline
+    \endfirsthead
+    \multicolumn{3}{l}{\textbf{\textit{Table \ref{table:others}}} continued}\\
+    \hline
+    \textbf{Name} & \textbf{Ingredients} & \textbf{Final concentration}\\
+    \hline
+    \endhead
+    \hline
+    \multicolumn{3}{l}{\textit{continued on the next page}}\\
+    \endfoot
+    \hline \hline
+    \endlastfoot
+    
+    %% actual content %%
+    \multirow{4}{4.25cm}{\centering \textbf{Agarose Gel Loading Buffer} (6$\times$)}
+        & Bromophenol blue & 0.25\% (w/v)\\
+        & Xylene cyanol    & 0.25\% (w/v)\\
+        & EDTA, pH 8.0     & 30 mM\\
+        & Glycerol         & 60\% (v/v)\\
+    \hline
+    \multirow{3}{4.25cm}{\centering \textbf{Biotin Binding Buffer} (1$\times$)}
+        & Tris-HCl, pH 8.0 & 10 mM\\
+        & EDTA, pH 8.0     & 1 mM\\
+        & NaCl             & 2 M\\
+    \hline
+    \multirow{2}{4.25cm}{\centering \textbf{Biotin Elution Buffer}}
+        & Formamide     & 95\% (v/v)\\
+        & EDTA, pH 8.0  & 10 mM\\
+    \hline
+    \multirow{6}{4.25cm}{\centering \textbf{HKMG Buffer}}
+        & HEPES-KOH, pH 7.9 & 10 mM\\
+        & KCl               & 100 mM\\
+        & MgCl\sub{2}       & 5 mM\\
+        & Glycerol          & 10\% (v/v)\\
+        & IGEPAL CA-630     & 0.5\% (v/v)\\
+        & DTT               & 1 mM\\
+    \hline
+    \pagebreak
+    \multirow{3}{4.25cm}{\centering \textbf{TAE} (1$\times$)}
+         & Tris-base           & 40 mM\\
+         & Glacial acetic acid & 0.1\% (v/v)\\
+         & EDTA, pH 8.0        & 1 mM\\
+    \hline
+    \multirow{3}{4.25cm}{\centering \textbf{TBE} (1$\times$)}
+         & Tris-base    & 89 mM\\
+         & Boric acid   & 89 mM\\
+         & EDTA, pH 8.0 & 2 mM\\
+    \hline
+    \multirow{3}{4.25cm}{\centering \textbf{Ni Binding Buffer} (8$\times$)}
+         & Imidazole        & 40 mM\\
+         & NaCl             & 4 M\\
+         & Tris-HCl, pH 7.9 & 160 mM\\
+    \hline
+    \multirow{3}{4.25cm}{\centering \textbf{Ni Wash Buffer} (8$\times$)}
+         & Imidazole        & 480 mM\\
+         & NaCl             & 4 M\\
+         & Tris-HCl, pH 7.9 & 160 mM\\
+    \hline
+    \multirow{3}{4.25cm}{\centering \textbf{Ni Elution Buffer} (4$\times$)}
+         & Imidazole        & 4 M\\
+         & NaCl             & 2 M\\
+         & Tris-HCl, pH 7.9 & 80 mM\\
+    \hline
+    \multirow{5}{4.25cm}{\centering \textbf{Pulldown Buffer} (1$\times$)}
+         & Tris-HCl, pH 7.4 & 50 mM\\
+         & NaCl             & 150 mM\\
+         & Glycerol         & 5\% (v/v)\\
+         & IGEPAL CA-630    & 0.2\% (v/v)\\
+         & DTT              & 0.5 mM\\
+    \hline
+    \multirow{4}{4.25cm}{\centering \textbf{CoIP Buffer} (1$\times$)}
+         & HEPES-KOH, pH 7.4 & 50 mM\\
+         & NaCl              & 150 mM\\
+         & MgCl\sub{2}       & 1 mM\\
+         & TWEEN-20          & 1\% (v/v)\\
+    \hline
+\end{longtable}
+}
+
+\pagebreak
+
+\subsection{Enzymes}
+
+{\small
+\begin{longtable}{|>{\raggedright\arraybackslash}m{4cm}|>{\raggedright\arraybackslash}m{7cm}|}
+    %% table setup %%
+    \caption{Enzymes used in this study\label{table:enzymes}}\\
+    \hline
+    \textbf{Name} & \textbf{Supplier (Catalogue Number)}\\
+    \hline
+    \endfirsthead
+    \multicolumn{2}{l}{\textbf{\textit{Table \ref{table:enzymes}}} continued}\\
+    \hline
+    \textbf{Name} & \textbf{Supplier (Catalogue Number)}\\
+    \hline
+    \endhead
+    \hline
+    \multicolumn{2}{l}{\textit{continued on the next page}}\\
+    \endfoot
+    \hline \hline
+    \endlastfoot
+    
+    %% actual content %%
+    Restriction Enzymes        & New England Biolabs\\
+    \hline
+    Ribonuclease A             & Sigma-Aldrich (R-6513)\\
+    \hline
+    T4 DNA Ligase              & Invitrogen (15224-041)\\
+    \hline
+    Pfu-DNA Polymerase         & Stratagene (600135-12)\\
+    \hline
+    Lambda Protein Phosphatase & New England Biolabs (P0735S)\\
+    \hline
+    Proteinase K               & Roche Applied Science (03115887001)\\
+    \hline
+\end{longtable}
+}
+
+\subsection{Antibodies}
+
+{\small
+\begin{longtable}{|>{\centering\arraybackslash}m{1.9cm}|>{\centering\arraybackslash}m{1.4cm}|>{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{1.6cm}|>{\raggedright\arraybackslash}m{6.5cm}|}
+    %% table setup %%
+    \caption{Primary Antibodies used in western blot\label{table:wbab}}\\
+    \hline
+    \textbf{Antibody} & \textbf{Raised in} & \textbf{Clonality} & \textbf{Dilution for WB} & \textbf{Supplier (Catalogue Number)}\\
+    \hline
+    \endfirsthead
+    \multicolumn{5}{l}{\textbf{\textit{Table \ref{table:wbab}}} continued}\\
+    \hline
+    \textbf{Antibody} & \textbf{Raised in} & \textbf{Clonality} & \textbf{Dilution for WB} & \textbf{Supplier (Catalogue Number)}\\
+    \hline
+    \endhead
+    \hline
+    \multicolumn{5}{l}{\textit{continued on the next page}}\\
+    \endfoot
+    \hline \hline
+    \endlastfoot
+    
+    %% actual content %%
+    \textbf{Cyclin B} (GNS1) & Mouse  & Monoclonal & 1:1000 & Santa Cruz Biotech. (sc-245)\\
+    \hline
+    \textbf{E2F4} (C-20)     & Rabbit & Polyclonal & 1:1000 & Santa Cruz Biotech. (sc-866)\\
+    \hline
+    \textbf{ERK2} (C-14)     & Rabbit & Polyclonal & 1:1000 & Santa Cruz Biotech. (sc-154)\\
+    \hline
+    \textbf{FLAG} M2         & Mouse  & Monoclonal & 1:5000 & Sigma-Aldrich (F3165)\\
+    \hline
+    \textbf{FOXK2}           & Rabbit & Polyclonal & 1:1000 & Bethyl Laboratories (A301-729A)\\
+    \hline
+    \textbf{FOXM1} (C-20)    & Rabbit & Polyclonal & 1:1000 & Santa Cruz Biotech. (sc-502)\\
+    \hline
+    \textbf{FOXM1}           & Rabbit & Polyclonal & 1:1000 & Cell Signalling Technology (\#3948)\\
+    \hline
+    \textbf{FOXO3} (75D8)    & Rabbit & Monoclonal & 1:1000 & Cell Signalling Technology (\#2497)\\
+    \hline
+    \textbf{FOXO3}           & Rabbit & Polyclonal & 1:2500 & Millipore (07-702)\\
+    \hline
+    \textbf{GFP}             & Rabbit & Polyclonal & 1:1000 & Santa Cruz Biotech. (sc-8334)\\
+    \hline
+    \textbf{Lamin B} (C-20)  & Goat   & Polyclonal & 1:1000 & Santa Cruz Biotech. (sc-6216)\\
+    \hline
+    \textbf{MYBL2} (C-20)    & Rabbit & Polyclonal & 1:1000 & Santa Cruz Biotech. (sc-725)\\
+    \hline
+    \textbf{NF-YA} (H-209)   & Rabbit & Polyclonal & 1:1000 & Santa Cruz Biotech. (sc-10779)\\
+    \hline
+    \textbf{pAkt} (Ser473)   & Rabbit & Polyclonal & 1:1000 & Cell Signalling Technology (\#9271)\\
+    \hline
+    \textbf{SRF} (G-20)      & Rabbit & Polyclonal & 1:1000 & Santa Cruz Biotech. (sc-335)\\
+    \hline
+    \textbf{$\beta$-Tubulin} & Rabbit & Polyclonal & 1:1000 & Abcam (ab6046)\\
+    \hline
+    \textbf{V5}              & Mouse  & Monoclonal & 1:5000 & Sigma-Aldrich (V8012)\\
+    \hline
+\end{longtable}
+
+\begin{longtable}{|>{\centering\arraybackslash}m{1.9cm}|>{\centering\arraybackslash}m{1.4cm}|>{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{1.6cm}|>{\raggedright\arraybackslash}m{6.5cm}|}
+    %% table setup %%
+    \caption{Secondary Antibodies used in western blot\label{table:wbab2}}\\
+    \hline
+    \textbf{Antibody} & \textbf{Raised in} & \textbf{Clonality} & \textbf{Dilution for WB} & \textbf{Supplier (Catalogue Number)}\\
+    \hline
+    \endfirsthead
+    \multicolumn{5}{l}{\textbf{\textit{Table \ref{table:wbab2}}} continued}\\
+    \hline
+    \textbf{Antibody} & \textbf{Raised in} & \textbf{Clonality} & \textbf{Dilution for WB} & \textbf{Supplier (Catalogue Number)}\\
+    \hline
+    \endhead
+    \hline
+    \multicolumn{5}{l}{\textit{continued on the next page}}\\
+    \endfoot
+    \hline \hline
+    \endlastfoot
+    
+    %% actual content %%
+    \small \setstretch{1} \textbf{IRDye 800CW anti-Mouse IgG}  & Goat   & Polyclonal & 1:10,000 & Li-Cor Biosciences (926-32210)\\
+    \hline
+    \small \setstretch{1} \textbf{IRDye 800CW anti-Rabbit IgG} & Goat   & Polyclonal & 1:10,000 & Li-Cor Biosciences (926-32211)\\
+    \hline
+    \small \setstretch{1} \textbf{IRDye 680LT anti-Mouse IgG}  & Donkey & Polyclonal & 1:20,000 & Li-Cor Biosciences (926-68022)\\
+    \hline
+    \small \setstretch{1} \textbf{IRDye 680LT anti-Rabbit IgG} & Donkey & Polyclonal & 1:20,000 & Li-Cor Biosciences (926-68023)\\
+    \hline
+    \small \setstretch{1} \textbf{IRDye 680LT anti-Goat IgG}   & Donkey & Polyclonal & 1:20,000 & Li-Cor Biosciences (926-68024)\\
+    \hline
+\end{longtable}
+
+\begin{longtable}{|>{\raggedright\arraybackslash}m{4cm}|>{\raggedright\arraybackslash}m{7.5cm}|}
+    %% table setup %%
+    \caption{Antibodies used in Chromatin Immunoprecipitation\label{table:chipab}}\\
+    \hline
+    \textbf{Name} & \textbf{Supplier (Catalogue Number)}\\
+    \hline
+    \endfirsthead
+    \multicolumn{2}{l}{\textbf{\textit{Table \ref{table:chipab}}} continued}\\
+    \hline
+    \textbf{Name} & \textbf{Supplier (Catalogue Number)}\\
+    \hline
+    \endhead
+    \hline
+    \multicolumn{2}{l}{\textit{continued on the next page}}\\
+    \endfoot
+    \hline \hline
+    \endlastfoot
+    
+    % actual content
+    FLAG M2 & Sigma-Aldrich (F3165)\\
+    \hline
+    FOXK2             & Bethyl Laboratories (A301-729A)\\
+    \hline
+    FOXM1 (C-20)      & Santa Cruz Biotech. (sc-502)\\
+    \hline
+    NF-YA (H-209)     & Santa Cruz Biotech. (sc-10779)\\
+    \hline
+    Normal Rabbit IgG & Millipore (\#12-370)\\
+    \hline
+    Normal Mouse IgG  & Millipore (\#12-371)\\
+    \hline
+\end{longtable}
+}
+
+\subsection{Chemicals used in cell cultures and treatments} \label{section:antibiotics}
+
+{\small
+\begin{longtable}{|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|>{\raggedright\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{3cm}|}
+    %% table setup %%
+    \caption{Antibiotics and cell cycle synchronisation reagents\label{table:tc}}\\
+    \hline
+    \textbf{Name} & \textbf{Diluent} & \textbf{Supplier (Catalogue Number)} & \textbf{Final concentration}\\
+    \hline
+    \endfirsthead
+    \multicolumn{4}{l}{\textbf{\textit{Table \ref{table:tc}}} continued}\\
+    \hline
+    \textbf{Name} & \textbf{Diluent} & \textbf{Supplier (Catalogue Number)} & \textbf{Final concentration}\\
+    \hline
+    \endhead
+    \hline
+    \multicolumn{4}{l}{\textit{continued on the next page}}\\
+    \endfoot
+    \hline \hline
+    \endlastfoot
+    
+    %% actual content %%
+    Blasticidin  & Sterilised Water & PAA (P05-017) & 10 $\mu$g/mL\\
+    \hline
+    Doxycycline  & Sterilised Water & Sigma-Aldrich (D9891) & 1.5 ng - 1 $\mu$g/ml\footnote{See \textbf{Results} section for the specific concentration for different applications.}\\
+    \hline
+    G-418        & HEPES            & PAA (P11-012)            & 500 $\mu$g/mL\\
+    \hline
+    Hydroxyurea  & Sterilised Water & Sigma-Aldrich (H8627)    & 5 mM\\
+    \hline
+    Hygromycin B & HEPES            & PAA (P02-015)            & 100 $\mu$g/mL\\
+    \hline
+    LY294002     & DMSO             & Merck Chemicals (440202) & 20 $\mu$M\\
+    \hline
+    Nocodazole   & DMSO             & Sigma-Aldrich (M1404)    & 100 nM\\
+    \hline
+    Puromycin    & Sterilised Water & PAA (P11-019)            & 1 $\mu$g/mL\\
+    \hline
+    Thymidine    & Sterilised Water & Sigma-Aldrich (T1895)    & 2 mM\\
+    \hline
+\end{longtable}
+}
+
+\subsection{Oligonucleotides}
+
+{\footnotesize \setstretch{1}
+\begin{longtable}{|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.5cm}|>{\centering\arraybackslash}m{4.5cm}|>{\raggedright\arraybackslash}m{4.7cm}|}
+    %% table setup %%
+    \caption{Oligonucleotides for the construction of plasmids (restriction sites are underlined)\label{table:cloneoligo}}\\
+    \hline
+    \textbf{ADS\#} & \textbf{Name} & \textbf{Purpose of the oligonucleotides} & \textbf{Sequence (5'$\rightarrow$3')}\\
+    \hline
+    \endfirsthead
+    \multicolumn{4}{l}{\textbf{\textit{Table \ref{table:cloneoligo}}} continued}\\
+    \hline
+    \textbf{ADS\#} & \textbf{Name} & \textbf{Purpose of the oligonucleotides} & \textbf{Sequence (5'$\rightarrow$3')}\\
+    \hline
+    \endhead
+    \hline
+    \multicolumn{4}{l}{\textit{continued on the next page}}\\
+    \endfoot
+    \hline \hline
+    \endlastfoot
+    
+    %% actual content %%
+    2731 & TEV-V5-His-F & To introduce XhoI site upstream of TEV sequence & GCAT\textbf{\underline{CTCGAG}}\seqsplit{GCCGGCGAGAACCTGTACTTC}\\
+    \hline
+    2732 & TEV-V5-His-R & To introduce 6$\times$His tag, XbaI site, and a stop codon downstream of V5 tag sequence & GCAT\underline{TCTAGA}\seqsplit{TTAGTGATGGTGATGGTGATGTCCTGT GGAGTCCAGGCCCAG}\\
+    \hline
+    2790 & HindIII-FOXO3 & To introduce HindIII site to 5' of FOXO3 ORF & GCAT\underline{AAGCTT}\seqsplit{GCCATGGCAGAGGCACCGGCTTCC}\\
+    \hline
+    2791 & FOXO3-XhoI & To introduce XhoI site to 3' of FOXO3 ORF & GCAT\underline{CTCGAG}\seqsplit{GCCTGGCACCCAGCTCTGAGATG}\\
+    \hline
+    2792 & NdeI-FOXK2-FK & To introduce NdeI site to 5' of FOXK2 Forkhead domain coding sequence & CTGCAT\underline{CATATG}\seqsplit{CCAGTGAAGGCCGTACAGCCACAC}\\
+    \hline
+    2793 & FOXK2-FK-XhoI & To introduce XhoI site to 3' of FOXK2 Forkhead domain coding sequence & GCAT\underline{CTCGAG}\seqsplit{TAGCTGCCGCTGGACGGTGATTAAG}\\
+    \hline
+    2800 & NdeI-FOXO3-FK & To introduce NdeI site to 5' of FOXO3 Forkhead domain coding sequence & CTGCAT\underline{CATATG}\seqsplit{GGGGCGGCTGGGGGCTCCGGG}\\
+    \hline
+    2801 & FOXO3-FK-XhoI & To introduce XhoI site to 3' of FOXO3 Forkhead domain coding sequence & GCAT\underline{CTCGAG}\seqsplit{GTTGCTATTGTCCATGGAGAC}\\
+    \hline
+    2812 & NdeI-FOXM1c-FK & To introduce NdeI site to 5' of FOXM1c Forkhead domain coding sequence & CTGCAT\underline{CATATG}\seqsplit{CCACCTGGAGCCCTTTGCGAG}\\
+    \hline
+    2813 & FOXM1c-FK-XhoI & To introduce XhoI site to 3' of FOXM1c Forkhead domain coding sequence & GTCA\underline{CTCGAG}\seqsplit{AGCCGCCAGGGGCAATGGC}\\
+    \hline
+    2884 & BglII-CCNB2 & To introduce BglII site to 5' of human CCNB2 promoter sequence & CTGCAT\underline{AGATCT}\seqsplit{CGTGTCTAAGAAAATTCAGCCAATG}\\
+    \hline
+    2885 & Luc2-XhoI & To introduce XhoI site to 3' of Luciferase gene Luc2 coding sequence & CTGCAT\underline{CTCGAG}\seqsplit{TTACACGGCGATCTTGCCGC}\\
+    \hline
+    2908 & EcoRI-FOXM1-F1 & To generate truncations of FOXM1B protein & AGCTAG\underline{GAATTC}\seqsplit{ATGAAAACTAGCCCCCGTCGG}\\
+    \hline
+    2909 & EcoRI-FOXM1-F117 & To generate truncations of FOXM1B protein & AGCTAG\underline{GAATTC}\seqsplit{CAGCCTCCAGGACTCCGGCC}\\
+    \hline
+    2910 & EcoRI-FOXM1-F235 & To generate truncations of FOXM1B protein & AGCTAG\underline{GAATTC}\seqsplit{GAGCGGCCACCCTACTCTTAC}\\
+    \hline
+    2911 & R367-FOXM1-XhoI & To generate truncations of FOXM1B protein & AGCTAG\underline{CTCGAG}\seqsplit{TTACTGGATAGGTACCAGGTATG}\\
+    \hline
+    2912 & R490-FOXM1-XhoI & To generate truncations of FOXM1B protein & AGCTAG\underline{CTCGAG}\seqsplit{TTACGAATCCTCCCAGGAGTGAG}\\
+    \hline
+    2913 & R748-FOXM1-XhoI & To generate truncations of FOXM1B protein & AGCTAG\underline{CTCGAG}\seqsplit{TTACTGTAGCTCAGGAATAAACTG}\\
+    \hline
+    2918 & R130-FOXM1-XhoI & To generate truncations of FOXM1B protein & AGCTAG\underline{CTCGAG}\seqsplit{TTAATCATAGCTGGTTTGGGTTTG}\\
+    \hline
+    2919 & R235-FOXM1-XhoI & To generate truncations of FOXM1B protein & AGCTAG\underline{CTCGAG}\seqsplit{TTACCGCTCAGACACAGAGTTCTG}\\
+    \hline
+    2920 & HindIII-FOXM1-F117 & To generate truncations of FOXM1B protein & AGCTAG\underline{AAGCTT}\seqsplit{CAGCCTCCAGGACTCCGGCCTC}\\
+    \hline
+    2921 & BamHI-FOXM1-R748 & To generate truncations of FOXM1B protein & AGCTAG\underline{GGATCC}\seqsplit{CTACTGTAGCTCAGGAATAAACTG}\\
+    \hline
+    2932 & EcoRI-FOXM1-F451 & To generate truncations of FOXM1B protein & AGCTAG\underline{GAATTC}\seqsplit{CCTGGGGAGGAAATGCCACAC}\\
+    \hline
+    2933 & FOXM1b-qc1-F & To generate L9A/L11A mutations of FOXM1B & \seqsplit{CTAGCCCCCGTCGGCCAGCCATTGCCAAAAGACGGAGGCTGCC}\\
+    \hline
+    2934 & FOXM1b-qc1-R & To generate L9A/L11A mutations of FOXM1B & \seqsplit{GGCAGCCTCCGTCTTTTGGCAATGGCTGGCCGACGGGGGCTAG}\\
+    \hline
+    2935 & FOXM1b-qc2-F & To generate F106A/L108A mutations of FOXM1B & \seqsplit{GTAGTGGGCCCAACAAAGCCATCGCCATCAGCTGTGGGGGAGC}\\
+    \hline
+    2936 & FOXM1b-qc2-R & To generate F106A/L108A mutations of FOXM1B & \seqsplit{GCTCCCCCACAGCTGATGGCGATGGCTTTGTTGGGCCCACTAC}\\
+    \hline
+\end{longtable}
+
+\begin{longtable}{|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{4.5cm}|>{\raggedright\arraybackslash}m{5.2cm}|}
+    %% table setup %%
+    \caption{Oligonucleotides for sequencing\label{table:seqoligo}}\\
+    \hline
+    \textbf{ADS\#} & \textbf{Name} & \textbf{Target} & \textbf{Sequence (5'$\rightarrow$3')}\\
+    \hline
+    \endfirsthead
+    \multicolumn{4}{l}{\textbf{\textit{Table \ref{table:seqoligo}}} continued}\\
+    \hline
+    \textbf{ADS\#} & \textbf{Name} & \textbf{Target} & \textbf{Sequence (5'$\rightarrow$3')}\\
+    \hline
+    \endhead
+    \hline
+    \multicolumn{4}{l}{\textit{continued on the next page}}\\
+    \endfoot
+    \hline \hline
+    \endlastfoot
+    
+    %% actual content %%
+    186  & T7 primer       & T7 promoter                         & \scriptsize TTAATACGACTCACTAT\\
+    \hline
+    187  & GST-seq-For     & Glutathione S-transferase (GST) CDS & \scriptsize GGGCTGGCAAGCCACGTTTGGTG\\
+    \hline
+    1532 & BGH-seq-rev     & BGH polyA                           & \scriptsize TAGAAGGCACAGTCGAGG\\
+    \hline
+    2737 & FOXM1-Cter-seq  & FOXM1 C-terminal                    & \scriptsize TTTGGCAACTCTTCTCCCTC\\
+    \hline
+    2886 & FOXM1-FK-seq T7 & FOXM1 Forkhead domain               & \scriptsize TGGCAGAACTCTGTGTCTGAG\\
+    \hline
+    2889 & terminator      & T7 terminator                       & \scriptsize TATGCTAGTTATTGCTCAG\\
+    \hline
+    2920 & GST-seq-rev     & Glutathione S-transferase (GST) CDS & \scriptsize AGCTGTGACCGTCTCCGGGAG\\
+    \hline
+    2890 & CMV forward     & CMV promoter                        & \scriptsize CGCAAATGGGCGGTAGGCGTG\\
+    \hline
+    3541 & Luc2-seq-F      & Luc2 gene body                      & \scriptsize GTAAGACACTGGGTGTGAACC\\
+    \hline
+\end{longtable}
+
+\begin{longtable}{|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{4.3cm}|>{\raggedright\arraybackslash}m{5.4cm}|}
+    %% table setup %%
+    \caption{Oligonucleotides for Chromatin Immunoprecipitation\label{table:chipoligo}}\\
+    \hline
+    \textbf{ADS\#} & \textbf{Name} & \textbf{Genomic coordinates (NCBI36/hg18)} & \textbf{Sequence (5'$\rightarrow$3')}\\
+    \hline
+    \endfirsthead
+    \multicolumn{4}{l}{\textbf{\textit{Table \ref{table:chipoligo}}} continued}\\
+    \hline
+    \textbf{ADS\#} & \textbf{Name} & \textbf{Genomic coordinates (NCBI36/hg18)} & \textbf{Sequence (5'$\rightarrow$3')}\\
+    \hline
+    \endhead
+    \hline
+    \multicolumn{4}{l}{\textit{continued on the next page}}\\
+    \endfoot
+    \hline \hline
+    \endlastfoot
+    
+    %% actual content %%
+    2618 & \scriptsize ChIP-KDM3A-F & \multirow{2}{4.5cm}{chr2:86474434-86474628} & \scriptsize ACCTGCTTGGGCCTTATCTT\\
+    2619 & \scriptsize ChIP-KDM3A-R & & \scriptsize CTAGGCACCAATTCCCAGAA\\
+    \hline
+    2652 & \scriptsize ChIP-CHD4-F & \multirow{2}{4.5cm}{chr12:6587430-6587586} & \scriptsize CATCCACCCCCAGTTTGATA\\
+    2653 & \scriptsize ChIP-CHD4-R & & \scriptsize GGCAGCTCTAGGGGGTTAGT\\
+    \hline
+    2654 & \scriptsize ChIP-NXPH2-F & \multirow{2}{4.5cm}{chr2:139252106-139252266} & \scriptsize TATGCTGGGATTGGGGAATA\\
+    2655 & \scriptsize ChIP-NXPH2-R & & \scriptsize ACATTCCTTACGCTGCCATC\\
+    \hline
+    2725 & \scriptsize ChIP-CKS1-F & \multirow{2}{4.5cm}{chr1:153213635-153213807} & \scriptsize GAGAACTGCCCTCCAATAAGG\\
+    2726 & \scriptsize ChIP-CKS1-R & & \scriptsize ACCTCCAAGCAACTCCCAAC\\
+    \hline
+    2729 & \scriptsize ChIP-PLK1-Fkh2-F & \multirow{2}{4.5cm}{chr16:23595514-23595751} & \scriptsize GGTCTCACCCTTTTGCATGT\\
+    2730 & \scriptsize ChIP-PLK1-Fkh2-R & & \scriptsize AGCAGATGTTGGGCATAACC\\
+    \hline
+    2738 & \scriptsize ChIP-Bim-F & \multirow{2}{4.5cm}{chr2:111594670-111594814} & \scriptsize GGAGGCTAGGGTACACTTCG\\
+    2739 & \scriptsize ChIP-Bim-R & & \scriptsize AGGCTCGGACAGGTAAAGG\\
+    \hline
+    \pagebreak
+    2772 & \scriptsize ChIP-CYP27C1-F & \multirow{2}{4.5cm}{chr2:127700750-127700911} & \scriptsize GCCTGTTTCCTCCCTGTAGA\\
+    2773 & \scriptsize ChIP-CYP27C1-R & & \scriptsize CCCAGCCCTCAAGATGTTT\\
+    \hline
+    2774 & \scriptsize ChIP-CENPF-F & \multirow{2}{4.5cm}{chr1:212842943-212843142} & \scriptsize AAACCGCGTCTAGCATTAGC\\
+    2775 & \scriptsize ChIP-CENPF-R & & \scriptsize CTCCACGCCTATTGGTCACT\\
+    \hline
+    2798 & \scriptsize ChIP-CCNB1-CHR-F & \multirow{2}{4.5cm}{chr5:68498605-68498770} & \scriptsize CGCGATCGCCCTGGAAACGCA\\
+    2799 & \scriptsize ChIP-CCNB1-CHR-R & & \scriptsize CCCAGCAGAAACCAACAGCCGT\\
+    \hline
+    2804 & \scriptsize ChIP-CCNG2-Fkh-F & \multirow{2}{4.5cm}{chr4:78296950-78297138} & \scriptsize CAGAGGGCTCCAAGACTGAT\\
+    2805 & \scriptsize ChIP-CCNG2-Fkh-R & & \scriptsize GGAAGGAGATCGTTTCTGGTC\\
+    \hline
+    2806 & \scriptsize ChIP-NEK2-F & \multirow{2}{4.5cm}{chr1:209915634-209915812} & \scriptsize GCTTCGCCTCTCTCATTGG\\
+    2807 & \scriptsize ChIP-NEK2-R & & \scriptsize GGGTTAGAGTTGCCGAGAGG\\
+    \hline
+    2808 & \scriptsize ChIP-PLK1-Fkh1-F & \multirow{2}{4.5cm}{chr16:23594785-23594967} & \scriptsize CCCCTGGTAGGAGGTCTGTT\\
+    2809 & \scriptsize ChIP-PLK1-Fkh1-R & & \scriptsize AAGCGGAAGCTAACCCAAAT\\
+    \hline
+    2814 & \scriptsize ChIP-PLK1-CHR-F & \multirow{2}{4.5cm}{chr16:23597609-23597772} & \scriptsize GGGCGGGTTTGGATTTTA\\
+    2815 & \scriptsize ChIP-PLK1-CHR-R & & \scriptsize AGTCACTGCAGCACTCATGC\\
+    \hline
+    2822 & \scriptsize ChIP-CCNB2-Fkh1-F & \multirow{2}{4.5cm}{chr15:57183018-57183206} & \scriptsize GCACTTAGGTTGGCAATTGTG\\
+    2823 & \scriptsize ChIP-CCNB2-Fkh1-R & & \scriptsize TGGTAGGAATGTACAACTTCTATGG\\
+    \hline
+    2824 & \scriptsize ChIP-CCNB2-CHR-F & \multirow{2}{4.5cm}{chr15:57184527-57184680} & \scriptsize TGCGAGAGTGCATCTTGTGT\\
+    2825 & \scriptsize ChIP-CCNB2-CHR-R & & \scriptsize CGCCGTTAGGACTGCTCTC\\
+    \hline
+    2826 & \scriptsize ChIP-CCNB2-Fkh2-F & \multirow{2}{4.5cm}{chr15:57190250-57190418} & \scriptsize GGAAGAGTTCCAGCCCTTTA\\
+    2827 & \scriptsize ChIP-CCNB2-Fkh2-R & & \scriptsize ACTTGTTTCCCCAGTGTCCA\\
+    \hline
+    2828 & \scriptsize ChIP-p27-F & \multirow{2}{4.5cm}{chr12:12763009-12763185} & \scriptsize ATTTCCCCTGCGCTTAGATT\\
+    2829 & \scriptsize ChIP-p27-R & & \scriptsize CAGTGCGTGCTCCTTTAGTG\\
+    \hline
+    2830 & \scriptsize ChIP-Luc2-Rev & Targeting Luc2 luciferase gene on pGL4.1 reporter & \scriptsize TCTTAATGTTTTTGGCATCT\\
+    \hline
+    2842 & \scriptsize ChIP-FOXO4-F & \multirow{2}{4.5cm}{chrX:70232247-70232402} & \scriptsize AGAGTCCGCGACGACTTCTA\\
+    2843 & \scriptsize ChIP-FOXO4-R & & \scriptsize GGAAACCGAGTTCTGCAGTC\\
+    \hline
+    2844 & \scriptsize ChIP-NUCKS1-F & \multirow{2}{4.5cm}{chr1:203986036-203986180} & \scriptsize GATGCGCCCAGATCATTAGT\\
+    2845 & \scriptsize ChIP-NUCKS1-R & & \scriptsize GCAGCGACCATTTTTGTTTT\\
+    \hline
+    2846 & \scriptsize ChIP-SKA2-F & \multirow{2}{4.5cm}{chr17:54587759-54587904} & \scriptsize GGCTGGAGCTCTGTGCTATC\\
+    2847 & \scriptsize ChIP-SKA2-R & & \scriptsize CTCCCACGCCATAAAGAAAA\\
+    \hline
+    2848 & \scriptsize ChIP-UBE2C-F & \multirow{2}{4.5cm}{chr20:43874547-43874710} & \scriptsize GCCAGTGGGTAGGTCTAGCA\\
+    2849 & \scriptsize ChIP-UBE2C-R & & \scriptsize GGAGAACACGACTGCAACTG\\
+    \hline
+    2860 & \scriptsize ChIP-ETV4-F & \multirow{2}{4.5cm}{chr17:38979421-38979550} & \scriptsize GGGCCAATCAGAATGTAGGG\\
+    2861 & \scriptsize ChIP-ETV4-R & & \scriptsize GGTCCTCGGCTTCTCTCTTT\\
+    \hline
+    2862 & \scriptsize ChIP-CDK1-F & \multirow{2}{4.5cm}{chr10:62208179-62208345} & \scriptsize AGTCTACGGGCTACCCGATT\\
+    2863 & \scriptsize ChIP-CDK1-R & & \scriptsize AGCCACTGTACCCGGCTTAT\\
+    \hline
+    2864 & \scriptsize ChIP-KPNA2-F & \multirow{2}{4.5cm}{chr17:63462410-63462555} & \scriptsize GCTTCGCAGGTACAGACTCA\\
+    2865 & \scriptsize ChIP-KPNA2-R & & \scriptsize CCCCGAGGCCTAGTCAAC\\
+    \hline
+    2866 & \scriptsize ChIP-UBE2S-F & \multirow{2}{4.5cm}{chr19:60611387-60611519} & \scriptsize GGTTTTAAACGCGTGATGGA\\
+    2867 & \scriptsize ChIP-UBE2S-R & & \scriptsize TTTGATCTGCACGAAACTGG\\
+    \hline
+    2868 & \scriptsize ChIP-PRC1-F & \multirow{2}{4.5cm}{chr15:89338704-89338855} & \scriptsize CCCGAGAGCAACAACCAC\\
+    2869 & \scriptsize ChIP-PRC1-R & & \scriptsize GCGGGGATTTTCTTGGAG\\
+    \hline
+    2870 & \scriptsize ChIP-PTMS-F & \multirow{2}{4.5cm}{chr12:6743796-6743945} & \scriptsize GGCAAGCAGTTAGGCTTCTG\\
+    2871 & \scriptsize ChIP-PTMS-R & & \scriptsize CGGTCACCTCCACTCCTCT\\
+    \hline
+    2872 & \scriptsize ChIP-MCM3-F & \multirow{2}{4.5cm}{chr6:52257712-52257861} & \scriptsize CCTCACTCACTGACGAGCAA\\
+    2873 & \scriptsize ChIP-MCM3-R & & \scriptsize CAAAAACATCCGGAAAGGAG\\
+    \hline
+    2874 & \scriptsize ChIP-BUB3-F & \multirow{2}{4.5cm}{chr10:124903821-124903969} & \scriptsize CCCCCTAGACTGAGACGTTG\\
+    2875 & \scriptsize ChIP-BUB3-R & & \scriptsize CGTTTCCACTACTCGCCACT\\
+    \hline
+    2876 & \scriptsize ChIP-FZR1-F & \multirow{2}{4.5cm}{chr19:3456972-3457095} & \scriptsize AACCACGCCCTCCATCTAC\\
+    2877 & \scriptsize ChIP-FZR1-R &  & \scriptsize CCCGCGATTCAAATCAATAC\\
+    \hline
+    2878 & \scriptsize ChIP-CDC20-F & \multirow{2}{4.5cm}{chr1:43597076-43597238} & \scriptsize GCCGCTAGACTCTCGTGATA\\
+    2879 & \scriptsize ChIP-CDC20-R &  & \scriptsize GCTTTAACACGCCTGGCTTA\\
+    \hline
+    2891 & \scriptsize ChIP-CCNF-F & \multirow{2}{4.5cm}{chr16:2419201-2419301} & \scriptsize AATCAGCGGCCAATGTTC\\
+    2892 & \scriptsize ChIP-CCNF-R &  & \scriptsize CCTGTGCTCGCCTCATTTAC\\
+    \hline
+    2893 & \scriptsize ChIP-CENPA-F & \multirow{2}{4.5cm}{chr2:26862303-26862446} & \scriptsize CCCTACCTGCAGTCGCTCTA\\
+    2894 & \scriptsize ChIP-CENPA-R &  & \scriptsize CGGTGCTTGGCAGAAGTC\\
+    \hline
+    \pagebreak
+    2924 & \scriptsize ChIP-IRS2-F & \multirow{2}{4.5cm}{chr13:109325328-109325497} & \scriptsize TGCCCTGCTCACACTGTCTA\\
+    2925 & \scriptsize ChIP-IRS2-R &  & \scriptsize TGTGTGGTTGGCTCTTATGC\\
+    \hline
+    2926 & \scriptsize ChIP-PLCL2-F & \multirow{2}{4.5cm}{chr3:17056207-17056361} & \scriptsize TCCTTCTGGAATTCCCCTCT\\
+    2927 & \scriptsize ChIP-PLCL2-R &  & \scriptsize AATATCGTCCCCCGATTCAT\\
+    \hline
+    2928 & \scriptsize ChIP-PAQR8-F & \multirow{2}{4.5cm}{chr6:52325337-52325478} & \scriptsize TGGGAACCCAAAGTAAAGGA\\
+    2929 & \scriptsize ChIP-PAQR8-R &  & \scriptsize ATGGGTGCAACTCCTGCTTA\\
+    \hline
+    2930 & \scriptsize ChIP-CIR1-F & \multirow{2}{4.5cm}{chr2:174968410-174968557} & \scriptsize CTAGAGAAGCGGAGGCTGTC\\
+    2931 & \scriptsize ChIP-CIR1-R &  & \scriptsize TTTCATCCTGCCTCCAAATC\\
+    \hline
+    2937 & \scriptsize ChIP-SCNN1A-F & \multirow{2}{4.5cm}{chr12:6350317-6350469} & \scriptsize GTTCCTGGGACTGGATGAAA\\
+    2938 & \scriptsize ChIP-SCNN1A-R &  & \scriptsize AGGAAGTGCTGAGTCCGAAG\\
+    \hline
+    2939 & \scriptsize ChIP-HPS4-F & \multirow{2}{4.5cm}{chr22:25197819-25197959} & \scriptsize GGAGCGGCTCAGAGATACAA\\
+    2940 & \scriptsize ChIP-HPS4-R &  & \scriptsize AGGCCGCCTCTCTTGATATT\\
+    \hline
+    2941 & \scriptsize ChIP-FOXJ2-F & \multirow{2}{4.5cm}{chr12:8070132-8070314} & \scriptsize TCCTTTCCTCCGTGTCATTC\\
+    2942 & \scriptsize ChIP-FOXJ2-R &  & \scriptsize CGTTGCCTTCAAACAAGGTC\\
+    \hline
+    2949 & \scriptsize ChIP-GTSF1L-F & \multirow{2}{4.5cm}{chr20:41844265-41844413} & \scriptsize GGTGTTGGTGGGAGTGTCTT\\
+    2950 & \scriptsize ChIP-GTSF1L-R &  & \scriptsize AGAGCGGCTGATAAACAGGA\\
+    \hline
+    2951 & \scriptsize ChIP-FTX-F & \multirow{2}{4.5cm}{chrX:73427162-73427285} & \scriptsize TCAGACAGAAAATCAGGCAAAA\\
+    2952 & \scriptsize ChIP-FTX-R &  & \scriptsize CCTAGTGGGGTGGCTATCCT\\
+    \hline
+    2953 & \scriptsize ChIP-IRF8-F & \multirow{2}{4.5cm}{chr16:84514888-84515056} & \scriptsize AGGCATCTTTGCCATGAGTC\\
+    2954 & \scriptsize ChIP-IRF8-R &  & \scriptsize AAGGATTTGTCGACCGTCTG\\
+    \hline
+    2955 & \scriptsize ChIP-PLEKHM1-F & \multirow{2}{4.5cm}{chr17:40895194-40895342} & \scriptsize CGCTATTTCCAGTCCCTGAA\\
+    2956 & \scriptsize ChIP-PLEKHM1-R &  & \scriptsize TGAGCTACCCCTCAAGTTGC\\
+    \hline
+    2957 & \scriptsize ChIP-HEXIM1-F & \multirow{2}{4.5cm}{chr17:40580873-40581022} & \scriptsize AACCCGCCTCTTCGTCTT\\
+    2958 & \scriptsize ChIP-HEXIM1-R &  & \scriptsize GAAGGATATCGCGAGCACAT\\
+    \hline
+    2961 & \scriptsize ChIP-CCDC44-F & \multirow{2}{4.5cm}{chr17:59031826-59031977} & \scriptsize CTCTCTAGGCAACCGTGAGG\\
+    2962 & \scriptsize ChIP-CCDC44-R &  & \scriptsize TTGATGGCGTAGCACACTTC\\
+    \hline
+\end{longtable}
+
+\begin{longtable}{|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{5.5cm}|>{\raggedright\arraybackslash}m{5.2cm}|}
+    %% table setup %%
+    \caption{Oligonucleotides for RT-PCR\label{table:rtoligo}}\\
+    \hline
+    \textbf{ADS\#} & \textbf{Name} & \textbf{Target Gene} & \textbf{Sequence (5'$\rightarrow$3')}\\
+    \hline
+    \endfirsthead
+    \multicolumn{4}{l}{\textbf{\textit{Table \ref{table:rtoligo}}} continued}\\
+    \hline
+    \textbf{ADS\#} & \textbf{Name} & \textbf{Target Gene} & \textbf{Sequence (5'$\rightarrow$3')}\\
+    \hline
+    \endhead
+    \hline
+    \multicolumn{4}{l}{\textit{continued on the next page}}\\
+    \endfoot
+    \hline \hline
+    \endlastfoot
+    
+    %% actual content %%
+    1728 & \scriptsize RT-CCNB1-F & \multirow{2}{5.5cm}{\textit{Cyclin B1}} & \scriptsize GGCCAAAATGCCTATGAAGA\\
+    1729 & \scriptsize RT-CCNB1-R &  & \scriptsize AGATGTTTCCATTGGGCTTG\\
+    \hline
+    2550 & \scriptsize RT-PLK1-F & \multirow{2}{5.5cm}{\textit{Polo-like kinase 1}} & \scriptsize AAGAGGAGGAAAGCCCTGAC\\
+    2551 & \scriptsize RT-PLK1-R &  & \scriptsize TTCTTCCTCTCCCCGTCATA\\
+    \hline
+    2552 & \scriptsize RT-FOXM1-F & \multirow{2}{5.5cm}{\textit{Forkhead box M1}} & \scriptsize CCTCAAACCCAAACCAGCTA\\
+    2553 & \scriptsize RT-FOXM1-R &  & \scriptsize GAAGCCACTGGATGTTGGAT\\
+    \hline
+    2669 & \scriptsize RT-AURKB-F & \multirow{2}{5.5cm}{\textit{Aurora kinase B}} & \scriptsize TGGGACACCCGACATCTTAACGC\\
+    2670 & \scriptsize RT-AURKB-R &  & \scriptsize ACCTTGAGCGCCACGATGAAATGG\\
+    \hline
+    2858 & \scriptsize RT-HMBS-F & \multirow{2}{5.5cm}{\textit{Hydroxymethylbilane synthase}} & \scriptsize GAGAAGAATGAAGTGGACCT\\
+    2859 & \scriptsize RT-HMBS-R &  & \scriptsize GAAAGACAACAGCATCATGAG\\
+    \hline
+    2896 & \scriptsize RT-CCNF-F & \multirow{2}{5.5cm}{\textit{Cyclin F}} & \scriptsize TAAGAAGTGCTTCCATGATGAC\\
+    2897 & \scriptsize RT-CCNF-R &  & \scriptsize TCTTGTGTCACTCCTAATGC\\
+    \hline
+    2898 & \scriptsize RT-CDC20-F & \multirow{2}{5.5cm}{\textit{Cell division cycle 20 homolog}} & \scriptsize TATATCCTGTCCAGTGGTTCAC\\
+    2899 & \scriptsize RT-CDC20-R &  & \scriptsize TGACCAAGTTATCATTACCACC\\
+    \hline
+    2900 & \scriptsize RT-FZR1-F & \multirow{2}{5.5cm}{\textit{Fizzy/cell division cycle 20 related 1}} & \scriptsize GTTCGACAAAGGAGTCTGTG\\
+    2901 & \scriptsize RT-FZR1-R &  & \scriptsize GGACATGGTTCACAATCAGG\\
+    \hline
+    2902 & \scriptsize RT-CENPA-F & \multirow{2}{5.5cm}{\textit{Centromere protein A}} & \scriptsize CACCCAGTGTTTCTGTCAGTC\\
+    2903 & \scriptsize RT-CENPA-R &  & \scriptsize AAAGTCATGCAGTCTTCTCCT\\
+    \hline
+    2904 & \scriptsize RT-CENPF-F & \multirow{2}{5.5cm}{\textit{Centromere protein F}} & \scriptsize ACAGCGTTCTTTCCAAACAC\\
+    2905 & \scriptsize RT-CENPF-R &  & \scriptsize CTTCATTTCCTCCATGCTTCTC\\
+    \hline
+    2906 & \scriptsize RT-TBP-F & \multirow{2}{5.5cm}{\textit{TATA box binding protein}} & \scriptsize CCGAAACGCCGAATATAATCC\\
+    2907 & \scriptsize RT-TBP-R &  & \scriptsize TGGACTGTTCTTCACTCTTGG\\
+    \hline
+    3391 & \scriptsize RT-SKA2-F & \multirow{2}{5.5cm}{\textit{Spindle and kinetochore associated complex subunit 2}} & \scriptsize TGCCCGCTTTAAACCAGTTGCTGT\\
+    3392 & \scriptsize RT-SKA2-R &  & \scriptsize GGTGACAGCTCCAGGTCTGTTTGC\\
+    \hline
+    3393 & \tiny RT-NUCKS1-F & \multirow{2}{5.5cm}{\textit{Nuclear casein kinase and cyclin-dependent kinase substrate 1}} & \scriptsize CCAGGAGAAAGATTCCGGCAGCG\\
+    3394 & \tiny RT-NUCKS1-R &  & \scriptsize GGCGGGCTTTCCGGTTCCTC\\
+    \hline
+\end{longtable}
+
+\begin{longtable}{|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{2.7cm}|>{\raggedright\arraybackslash}m{7cm}|}
+    %% table setup %%
+    \caption{Oligonucleotides for band shift\label{table:chipbandshift}}\\
+    \hline
+    \textbf{ADS\#} & \textbf{Name} & \textbf{Source} & \textbf{Sequence (5'$\rightarrow$3')}\\
+    \hline
+    \endfirsthead
+    \multicolumn{4}{l}{\textbf{\textit{Table \ref{table:chipbandshift}}} continued}\\
+    \hline
+    \textbf{ADS\#} & \textbf{Name} & \textbf{Source} & \textbf{Sequence (5'$\rightarrow$3')}\\
+    \hline
+    \endhead
+    \hline
+    \multicolumn{4}{l}{\textit{continued on the next page}}\\
+    \endfoot
+    \hline \hline
+    \endlastfoot
+    
+    %% actual content %%
+    2778 & \scriptsize BS-PLAC8wt-F & \multirow{2}{3.2cm}{PLAC8 locus (wild-type)} & \scriptsize ctagACTTACAATTA\underline{GTAAACA}AGGTTCCGAG\\
+    2779 & \scriptsize BS-PLAC8wt-R &  & \scriptsize ctagCTCGGAACCT\underline{TGTTTAC}TAATTGTAAGT\\
+    \hline
+    2780 & \scriptsize BS-MMP9wt-F & \multirow{2}{3.2cm}{MMP9 locus (wild-type)} & \scriptsize ctagTAAGACAGATT\underline{GTAAACA}AGCCATGGCG\\
+    2781 & \scriptsize BS-MMP9wt-R &  & \scriptsize ctagCGCCATGGCT\underline{TGTTTAC}AATCTGTCTTA\\
+    \hline
+    2784 & \scriptsize BS-MMP9mut1-F & \multirow{2}{3.2cm}{MMP9 locus (mutated)} & \scriptsize ctagTAAGACAGA{\color{red} GG}\underline{GTAAACA}AGCCATGGCG\\
+    2785 & \scriptsize BS-MMP9mut1-R &  & \scriptsize ctagCGCCATGGCT\underline{TGTTTAC}{\color{red} CC}TCTGTCTTA\\
+    \hline
+    2786 & \scriptsize BS-MMP9mut2-F & \multirow{2}{3.2cm}{MMP9 locus (mutated)} & \scriptsize ctagTAAGACAGATT\underline{GTAAACA}{\color{red} GA}CCATGGCG\\
+    2787 & \scriptsize BS-MMP9mut2-R &  & \scriptsize ctagCGCCATGG{\color{red} TC}\underline{TGTTTAC}AATCTGTCTTA\\
+    \hline
+    2802 & \scriptsize BS-MMP9mut4-F & \multirow{2}{3.2cm}{MMP9 locus (mutated)} & \scriptsize ctagTAAGACAGATT\underline{GTAAA{\color{red} A}A}AGCCATGGCG\\
+    2803 & \scriptsize BS-MMP9mut4-R &  & \scriptsize ctagCGCCATGGCT\underline{T{\color{red} T}TTTAC}AATCTGTCTTA\\
+    \hline
+    2959 & \scriptsize BS-CCNB1wt-F & \multirow{2}{3.2cm}{CCNB1 locus (wild-type)} & \scriptsize ctagAGGGAGCAGTGCGGGG\underline{TTTAAA}TCTGAG\\
+    2960 & \scriptsize BS-CCNB1wt-R &  & \scriptsize ctagCTCAGA\underline{TTTAAA}CCCCGCACTGCTCCCT\\
+    \hline
+\end{longtable}
+
+\begin{longtable}{|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{5.2cm}|}
+    \caption{Oligonucleotides for creating biotin labelled DNA for in vitro DNA pulldown experiment\label{table:oligodnapd}}\\
+    
+    \hline
+    \textbf{ADS\#} & \textbf{Name} & \textbf{Sequence (5'$\rightarrow$3')} & \textbf{Purpose}\\
+    \hline
+    \endfirsthead
+    \multicolumn{4}{l}{\textbf{\textit{Table \ref{table:oligodnapd}}} continued}\\
+    \hline
+    \textbf{ADS\#} & \textbf{Name} & \textbf{Sequence (5'$\rightarrow$3')} & \textbf{Purpose}\\
+    \hline
+    \endhead
+    \hline
+    \multicolumn{4}{l}{\textit{continued on the next page}}\\
+    \endfoot
+    \hline \hline
+    \endlastfoot
+    
+    2839 & BioTag-ADS2798 & \scriptsize Bio- CGCGATCGCCCTGGAAACGCA & \scriptsize To add biotin tag to the CCNB1 ChIP region where FOXM1 bind. Use together with oligo ADS2799.\\
+    \hline
+    2564 & BioTag-Luc2-R & \scriptsize Bio- AAGAAGTGCTCGTCCTCGTC & \scriptsize To add biotin tag to a sequence fragment within the luciferase Luc2 genebody as a negative control for the experiment. Use together with oligo ADS3541\\
+    \hline
+\end{longtable}
+}
+
+\subsection{Plasmids for use in mammalian cell transfections}
+
+{\scriptsize \setstretch{1}
+\begin{longtable}{|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{4.5cm}|>{\raggedright\arraybackslash}m{5.2cm}|}
+    %% table setup %%
+    \caption{Plasmids constructed previously for transfection of mammalian cells\label{table:vector}}\\
+    \hline
+    \textbf{pAS\#} & \textbf{Plasmid Name} & \textbf{Driving Promoter} & \textbf{Description of Plasmid}\\
+    \hline
+    \endfirsthead
+    \multicolumn{4}{l}{\textbf{\textit{Table \ref{table:vector}}} continued}\\
+    \hline
+    \textbf{pAS\#} & \textbf{Plasmid Name} & \textbf{Driving Promoter} & \textbf{Description of Plasmid}\\
+    \hline
+    \endhead
+    \hline
+    \multicolumn{4}{l}{\textit{continued on the next page}}\\
+    \endfoot
+    \hline \hline
+    \endlastfoot
+    
+    %% actual content %%
+    188 & pCMV5 & CMV & CMV promoter-driven eukaryotic expression vector.\\
+    \hline
+    1171 & pBlueScript/FOXM1B & Lac & Coding sequence of FOXM1B-FLAG-His cloned into the pBlueScript vector.\\
+    \hline
+    1175 & pCMV/FOXM1B & CMV & Coding sequence of FOXM1B-FLAG-His cloned into the pCMV5 vector.\\
+    \hline
+    1189 & pGL2/6$\times$FOX-Luc+ & 6$\times$FOX binding sites from the \textit{Cdx2} gene and TATA box & The \textit{Luc+} luciferase gene driven by the TATA box and 6 tandem repeats of Forkhead binding site from mouse \textit{Cdx2} gene (\cite{wang2005forkhead}).\\
+    \hline
+    2253 & pBlueScript/FOXM1C & Lac & Coding sequence of FOXM1C-FLAG-His cloned into pBlueScript vector.\\
+    \hline
+    2254 & pCMV/FOXM1C & CMV & Coding sequence of FOXM1C-FLAG-His cloned into pCMV5 vector.\\
+    \hline
+    3003 & pEGFP-N3 & CMV & Encodes a red-shifted variant of wild-type GFP which has been optimised for brighter fluorescence and higher expression in mammalian cells (from CloneTech, provided by Dr. Alan. J. Whitmarsh).\\
+    \hline
+    3010 & pcDNA3.1(+) & CMV & CMV promoter-driven eukaryotic expression vector (from Invitrogen, provided by Dr. Ling-I Su).\\
+    \hline
+    3017 & pGL4.1/CCNB1-WT & The wild-type promoter of human \textit{CCNB1} gene & The \textit{Luc2} luciferase gene driven by the wild-type human \textit{CCNB1} gene promoter.\\
+    \hline
+    3018 & pGL4.1/CCNB1- CDEmut & The promoter of human \textit{CCNB1} gene with the CDE mutation & The \textit{Luc2} luciferase gene driven by the CDE-mutated human \textit{CCNB1} gene promoter.\\
+    \hline
+    3019 & pGL4.1/CCNB1- CHRmut & The promoter of human \textit{CCNB1} gene with the CHR mutation & The \textit{Luc2} luciferase gene driven by the CHR-mutated human \textit{CCNB1} gene promoter.\\
+    \hline
+    3020 & pGL4.1/CCNB1- CCAATdel & The promoter of human \textit{CCNB1} gene with the CCAAT deletion & The \textit{Luc2} luciferase gene driven by the CCAAT-deleted human \textit{CCNB1} gene promoter.\\
+    \hline
+    3035 & pGL4.1/CCNB2- CCAATmutant & The promoter of human \textit{CCNB2} gene with the CCAAT mutation & The \textit{Luc2} luciferase gene driven by the CCAAT- mutated human \textit{CCNB2} gene promoter.\\
+    \hline
+    3036 & pGL4.1/CCNB1- CDE/CHRmut & The promoter of human \textit{CCNB1} gene with the CDE/CHR double mutations & The \textit{Luc2} luciferase gene driven by the CDE/CHR double-mutated human \textit{CCNB1} gene promoter.\\
+    \hline
+    3037 & pGL4.1/CCNB2-WT & The wild-type promoter of human \textit{CCNB2} gene & The \textit{Luc2} luciferase gene driven by the wild-type human \textit{CCNB2} gene promoter.\\
+    \hline
+    3038 & pGL4.1/CCNB2- CDEmut & The promoter of human \textit{CCNB2} gene with the CDE mutation & The \textit{Luc2} luciferase gene driven by the CDE-mutated human \textit{CCNB2} gene promoter.\\
+    \hline
+    3039 & pGL4.1/CCNB2- CHRmutant & The promoter of human \textit{CCNB2} gene with the CHR mutation & The \textit{Luc2} luciferase gene driven by the CHR-mutated human \textit{CCNB2} gene promoter.\\
+    \hline
+    3050 & pGL4.1/CCNB1- CCAATdel.CHRmutant & The promoter of human \textit{CCNB1} gene with the CCAAT deletion and CHR mutation & The \textit{Luc2} luciferase gene driven by the CCAAT- deleted and CHR-mutated human \textit{CCNB1} gene promoter.\\
+    \hline
+\end{longtable}
+
+\begin{longtable}{|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{4cm}|>{\centering\arraybackslash}m{1.5cm}|>{\raggedright\arraybackslash}m{7.2cm}|}
+    %% table setup %%
+    \caption{Plasmids constructed in this study for transfection of mammalian cells\label{table:vector2}}\\
+    \hline
+    \textbf{pAS\#} & \textbf{Plasmid Name} & \textbf{Driving Promoter} & \textbf{Description of Plasmid}\\
+    \hline
+    \endfirsthead
+    \multicolumn{4}{l}{\textbf{\textit{Table \ref{table:vector2}}} continued}\\
+    \hline
+    \textbf{pAS\#} & \textbf{Plasmid Name} & \textbf{Driving Promoter} & \textbf{Description of Plasmid}\\
+    \hline
+    \endhead
+    \hline
+    \multicolumn{4}{l}{\textit{continued on the next page}}\\
+    \endfoot
+    \hline \hline
+    \endlastfoot
+    
+    %% actual content %%
+    3004 & pEGFP-N3/FOXM1B & CMV & Coding sequence of FOXM1B, cut from pAS1171 using HindIII/XhoI, directly cloned into pAS3003 using HindIII/SalI.\\
+    \hline
+    3005 & pEGFP-N3/FOXM1C & CMV & Coding sequence of FOXM1C, cut from pAS2253 using HindIII/XhoI, directly cloned into pAS3003 using HindIII/SalI.\\
+    \hline
+    3006 & pBluescript/FOXM1B-V5 & Lac & The TEV-V5-His tag sequence (128bp) was generated from pGEM-T-easy-C3tag (\cite{kolodziej2009optimal}) using primer pairs ADS 2731/2732, and cloned into pAS1171 using XhoI/XbaI.\\
+    \hline
+    3007 & pBluescript/FOXM1C-V5 & Lac & The TEV-V5-His tag sequence (128bp) was generated from pGEM-T-easy-C3tag (\cite{kolodziej2009optimal}) using primer pairs ADS 2731/2732, and cloned into pAS1171 using XhoI/XbaI.\\
+    \hline
+    3008 & pcDNA3.1/FOXM1B-V5 & CMV & Coding sequence of FOXM1B-V5, cut from pAS3006 and cloned into pAS3010 using HindIII/XbaI.\\
+    \hline
+    3009 & pcDNA3.1/FOXM1C-V5 & CMV & Coding sequence of FOXM1C-V5, cut from pAS3007 and cloned into pAS3010 using HindIII/XbaI.\\
+    \hline
+    3010 & pcDNA3/FOXO3 & CMV & Coding sequence of FOXO3 cloned into pcDNA3 vector (Invitrogen) (from Dr. Alan. J. Whitmarsh).\\
+    \hline
+    3012 & pcDNA5/FRT/TO/ 3$\times$FLAG-FOXO3 & TO/CMV & Coding sequence of FOXO3 cloned intro pcDNA5/FRT/TO/3$\times$FLAG vector (from Dr. Catherine B. Millar).\\
+    \hline
+    3048 & p3$\times$FLAG/FOXM1B WT & CMV & Coding sequence of the wild-type FOXM1B cloned into Sigma p3$\times$FLAG vector (from Dr. Suyun Huang).\\
+    \hline
+    3049 & p3$\times$FLAG/FOXM1B R286A.H287A & CMV & Coding sequence of the FOXM1B R286A.H287A mutant cloned into Sigma p3$\times$FLAG vector (from Dr. Suyun Huang).\\
+    \hline
+    3069 & p3$\times$FLAG/FOXM1B WT $\Delta$1-116 & CMV & Coding sequence of the FOXM1B aa 117 - 748 cloned into Sigma p3$\times$FLAG vector.\\
+    \hline
+    3072 & p3$\times$FLAG/FOXM1B WT L9A.L11A & CMV & Coding sequence of the FOXM1B L9A.L11A mutant cloned into Sigma p3$\times$FLAG vector.\\
+    \hline
+\end{longtable}
+
+\begin{longtable}{|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{4cm}|>{\centering\arraybackslash}m{1.5cm}|>{\raggedright\arraybackslash}m{7.2cm}|}
+    %% table setup %%
+    \caption{Plasmids constructed in this study for GST-pull down\label{table:gstvector}}\\
+    \hline
+    \textbf{pAS\#} & \textbf{Plasmid Name} & \textbf{Driving Promoter} & \textbf{Description of Plasmid}\\
+    \hline
+    \endfirsthead
+    \multicolumn{4}{l}{\textbf{\textit{Table \ref{table:gstvector}}} continued}\\
+    \hline
+    \textbf{pAS\#} & \textbf{Plasmid Name} & \textbf{Driving Promoter} & \textbf{Description of Plasmid}\\
+    \hline
+    \endhead
+    \hline
+    \multicolumn{4}{l}{\textit{continued on the next page}}\\
+    \endfoot
+    \hline \hline
+    \endlastfoot
+    
+    %% actual content %%
+    3059 & pGEX-6p1/FOXM1B WT 1-367 & Tac & Coding sequence of the wild-type \textit{FOXM1B} aa 1-367 into the pGES-6p1 vector.\\
+    \hline
+    3060 & pGEX-6p1/FOXM1B WT 117-367 & Tac & Coding sequence of the wild-type \textit{FOXM1B} aa 117-367 into the pGES-6p1 vector.\\
+    \hline
+    3061 & pGEX-6p1/FOXM1B WT 235-367 & Tac & Coding sequence of the wild-type \textit{FOXM1B} aa 235-367 into the pGES-6p1 vector.\\
+    \hline
+    3062 & pGEX-6p1/FOXM1B WT 235-490 & Tac & Coding sequence of the wild-type \textit{FOXM1B} aa 235-490 into the pGES-6p1 vector.\\
+    \hline
+    3063 & pGEX-6p1/FOXM1B WT 235-748 & Tac & Coding sequence of the wild-type \textit{FOXM1B} aa 235-748 into the pGES-6p1 vector.\\
+    \hline
+    3064 & pGEX-6p1/FOXM1B R286A.H287A 235-367 & Tac & Coding sequence of the wild-type \textit{FOXM1B} R286A.H287A mutant aa 235-367 into the pGES-6p1 vector.\\
+    \hline
+    3065 & pGEX-6p1/FOXM1B R286A.H287A 1-367 & Tac & Coding sequence of the wild-type \textit{FOXM1B} R286A.H287A mutant aa 1-367 into the pGES-6p1 vector.\\
+    \hline
+    3066 & pGEX-6p1/FOXM1B WT 1-130 & Tac & Coding sequence of the wild-type \textit{FOXM1B} aa 1-130 into the pGES-6p1 vector.\\
+    \hline
+    3067 & pGEX-6p1/FOXM1B WT 1-235 & Tac & Coding sequence of the wild-type \textit{FOXM1B} aa 1-235 into the pGES-6p1 vector.\\
+    \hline
+    3068 & pGEX-6p1/FOXM1B WT 451-748 & Tac & Coding sequence of the wild-type \textit{FOXM1B} aa 451-748 into the pGES-6p1 vector.\\
+    \hline
+    3070 & pGEX-6p1/FOXM1B L9A.L11A 1-367 & Tac & Coding sequence of the wild-type \textit{FOXM1B} L9A.L11A mutant aa 1-367 into the pGES-6p1 vector.\\
+    \hline
+    3071 & pGEX-6p1/FOXM1B F106A.L108A 1-367 & Tac & Coding sequence of the wild-type \textit{FOXM1B} F106A.L108A mutant aa 1-367 into the pGES-6p1 vector.\\
+    \hline
+\end{longtable}
+}
+
+\subsection{siRNA used in this study}
+
+All siRNAs were ON-TARGETplus SMARTpool purchased from Dharmacon RNAi Technology (Thermo Scientific).
+
+{\small
+\begin{longtable}{|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{6.5cm}|}
+    %% table setup %%
+    \caption{siRNAs used in this study\label{table:sirna}}\\
+    \hline
+    \textbf{Name} & \textbf{Targeted Region} & \textbf{Supplier (Catalogue Number)}\\
+    \hline
+    \endfirsthead
+    \multicolumn{3}{l}{\textbf{\textit{Table \ref{table:sirna}}} continued}\\
+    \hline
+    \textbf{Name} & \textbf{Targeted Region} & \textbf{Supplier (Catalogue Number)}\\
+    \hline
+    \endhead
+    \hline
+    \multicolumn{3}{l}{\textit{continued on the next page}}\\
+    \endfoot
+    \hline \hline
+    \endlastfoot
+    
+    % actual content
+    siFOXK2 & ORF & L-008354-00-0005\\
+    \hline
+    siFOXM1 & ORF & L-009762-00-0005\\
+    \hline
+    siFOXO3a & ORF & L-003007-00-0005\\
+    \hline
+    siGAPDH & ORF & L-004253-00-0005\\
+    \hline
+    siLIN9 & 3'-UTR/ORF & L-018918-01-0005\\
+    \hline
+    siMYBL2 & ORF & L-010444-00-0005\\
+    \hline
+    Non-Targeting Pool & N/A & D-001810-10-20\\
+    \hline
+\end{longtable}
+}
